@@ -1,0 +1,53 @@
+###
+### A complete description of a Prefect Deployment for flow 'github-stars'
+###
+name: githubstars_orion1
+description: null
+version: f9f3249c85181a665e12cc0af9a89f0f
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: github-stars
+manifest_path: null
+storage:
+  repository: https://github.com/smeruva1/prefect_test
+  reference: null
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: 7d15c89a-831a-4fe5-8378-a09227dbec12
+  _block_document_name: github
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: 4_prefect_retry.py:github_stars
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    repos:
+      title: repos
+      position: 0
+  required:
+  - repos
+  definitions: null
+timestamp: '2023-02-05T04:01:10.905171+00:00'

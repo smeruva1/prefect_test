@@ -13,4 +13,5 @@ def github_stars(repos):
         get_stars(repo)
 
 # call the flow!
-github_stars(["PrefectHQ/Prefect", "PrefectHQ/prefect-aws",  "PrefectHQ/prefect-dbt"])
+if __name__ == "main":
+        github_stars(["PrefectHQ/Prefect", "PrefectHQ/prefect-aws",  "PrefectHQ/prefect-dbt"])
